@@ -1,0 +1,183 @@
+@import "reset";
+@import "func";
+@import "fonts";
+@import "vars";
+@import "pages/index";
+@import "pages/page-list";
+@import "pages/page-card";
+
+/* MAIN */
+html {
+  height: 100%;
+}
+
+body {
+  padding: 96px 34px;
+  max-width: 1280px;
+  min-width: 272px;
+  width: calc(100% - 68px);
+  font-family: $font-hn;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  color: $color-text;
+  margin: 0 auto;
+
+  .wrapper {
+    height: 100%;
+  }
+}
+
+.font-sg {
+  font-family: $font-sg;
+}
+.font-hn {
+  font-family: $font-hn;
+}
+
+*::selection {
+  background-color: $color-accent;
+}
+
+.pseudo {
+  display: block;
+  position: absolute;
+  content: '';
+}
+
+img {
+  user-select: none;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+
+  &-start {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+button, a {
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+  overflow: hidden;
+  span {
+    font-weight: 400;
+    color: white;
+    background-color: $color-header-bg;
+    text-transform: uppercase;
+    font-size: 72px;
+    line-height: 86px;
+  }
+}
+
+input {
+  &[type="text"],
+  &[type="email"] {
+    display: block;
+    border: 0;
+    border-bottom: 1px solid $color-input-border;
+    padding: 0 0 13px;
+    line-height: 28px;
+    margin-bottom: 24px;
+    width: 100%;
+    font-size: 16px;
+    transition: .5s;
+
+    &:focus {
+      outline: none;
+      border-color: black;
+    }
+  }
+}
+
+button[type="submit"] {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: $font-sg;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  transition: .5s;
+
+  &:hover {
+    color: $color-header-bg;
+    border-color: $color-header-bg;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  body {
+    padding: 76px 34px;
+    font-size: 14px;
+  }
+
+  h1 {
+    span {
+      font-size: 48px;
+      line-height: 58px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  input {
+    &[type="text"],
+    &[type="email"] {
+      font-size: 14px;
+    }
+  }
+
+  button[type="submit"] {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    width: calc(100% - 48px);
+    padding: 76px 24px;
+    font-size: 12px;
+  }
+
+  h1 {
+    span {
+      font-size: 30px!important;
+      line-height: 36px!important;
+    }
+  }
+
+  input {
+    &[type="text"],
+    &[type="email"] {
+      font-size: 12px;
+      line-height: 20px;
+      padding: 0 0 8px;
+    }
+  }
+}
+
+// temp
+footer {
+  margin-top: 40px;
+  border-top: 1px solid $color-sepa;
+  padding: 24px 0 24px;
+  text-align: center;
+  a, a:visited {
+    color: $color-header-bg;
+  }
+}

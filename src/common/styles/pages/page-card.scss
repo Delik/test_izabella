@@ -1,0 +1,288 @@
+@import '../vars';
+
+.page-card {
+  .content {
+    height: 100%;
+    margin-top: 48px;
+
+    .row {
+      @extend .flex;
+      flex-wrap: wrap;
+    }
+
+    &__block {
+      position: relative;
+      margin-bottom: 34px;
+      flex-basis: calc(50% - 16px);
+    }
+
+    &__block-timespan {
+      margin-bottom: 48px;
+    }
+
+    &__block-timespan-from,
+    &__block-timespan-to {
+      span {
+        display: inline-block;
+        vertical-align: baseline;
+
+        &:first-child {
+          font-family: $font-sg;
+          color: black;
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    &__block-timespan-from {
+      margin-bottom: 28px;
+      flex-basis: calc(50% - 16px);
+    }
+
+    &__block-info {
+      flex-basis: calc(50% - 112px);
+      background: $color-price-bg;
+      padding: 48px;
+    }
+
+    &__block-info-title {
+      @extend .mb-32;
+    }
+
+    &__block-descriprion {
+      font-size: 24px;
+      line-height: 40px;
+      margin-bottom: 72px;
+    }
+
+    &__block-discount {
+      background: $color-accent;
+      padding: 10px 20px;
+      @extend .ml-48;
+    }
+
+    &__block-discount-amount {
+      color: black;
+      font-family: $font-sg;
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 5px;
+    }
+
+    &__block-discount-until {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    &__block-price {
+      color: black;
+      font-size: 52px;
+      line-height: 52px;
+      font-weight: 300;
+      white-space: nowrap;
+      @extend .mb-14;
+    }
+
+    &__block-price-descr {
+      font-size: 24px;
+      line-height: 40px;
+      color: black;
+      @extend .mb-46;
+    }
+
+    &__block-no-discount-descr {
+      font-size: 14px;
+      @extend .mb-4;
+    }
+
+    &__block-no-discount-amount {
+      font-size: 24px;
+      line-height: 40px;
+      text-decoration: line-through;
+    }
+
+    &__block-empty {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .page-card {
+
+    h1 {
+      span {
+        font-size: 48px;
+        line-height: 58px;
+      }
+    }
+
+    .content {
+      &__block-timespan {
+        margin-bottom: 32px;
+      }
+
+      &__block-timespan-from,
+      &__block-timespan-to {
+        span {
+          &:first-child {
+            font-size: 18px;
+            line-height: 24px;
+          }
+        }
+      }
+
+      &__block-timespan-from {
+        margin-bottom: 16px;
+      }
+
+      &__block-descriprion {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 0;
+      }
+
+      &__block-info {
+        flex-basis: calc(50% - 48px);
+        padding: 32px 16px;
+        margin-bottom: 32px;
+      }
+
+      &__block-info-title {
+        margin-bottom: 20px;
+      }
+
+      &__block-price {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 12px;
+      }
+
+      &__block-price-descr {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 20px;
+      }
+
+      &__block-discount {
+        margin-left: 18px;
+      }
+
+      &__block-discount-amount {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      &__block-no-discount-descr,
+      &__block-discount-until {
+        font-size: 10px;
+        line-height: 14px;
+      }
+
+      &__block-no-discount-amount {
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      &__block-empty {
+        display: block;
+      }
+
+    }
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .page-card {
+    h1 {
+      span {
+        font-size: 36px;
+        line-height: 42px;
+      }
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      padding-bottom: 8px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .page-card {
+    width: calc(100% - 40px);
+    padding: 76px 20px;
+
+    .row {
+      flex-direction: column;
+    }
+
+    .content {
+      &__block {
+        width: 100%;
+        margin-bottom: 32px;
+      }
+
+      &__block-timespan-from,
+      &__block-timespan-to {
+        font-size: 12px;
+        span {
+          &:first-child {
+            line-height: 20px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
+
+      &__block-empty {
+        display: none;
+      }
+
+      &__block-info {
+        width: calc(100% - 32px);
+        padding: 24px 16px 20px;
+      }
+
+      &__block-info-title {
+        margin-bottom: 24px;
+      }
+
+      &__block-price {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 12px;
+      }
+
+      &__block-price-descr {
+        margin-bottom: 24px;
+      }
+
+      &__block-discount {
+        margin-left: 18px;
+      }
+
+      &__block-discount-amount {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      &__block-no-discount-descr,
+      &__block-discount-until {
+        font-size: 8px;
+        line-height: 12px;
+      }
+
+      &__block-no-discount-amount {
+        font-size: 24px;
+        line-height: 40px;
+      }
+
+      &__btn-submit {
+        margin-top: 8px;
+      }
+    }
+  }
+}

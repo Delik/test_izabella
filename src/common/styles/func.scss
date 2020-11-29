@@ -1,0 +1,12 @@
+$sides: (top, bottom, left, right);
+
+@for $i from 1 through 100 {
+  @each $side in $sides {
+    .m#{str-slice($side, 0, 1)}-#{$i} {
+      margin-#{$side}: #{$i}px;
+    }
+    .p#{str-slice($side, 0, 1)}-#{$i} {
+      padding-#{$side}: #{$i}px;
+    }
+  }
+}

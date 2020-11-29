@@ -1,0 +1,83 @@
+/* Space Grotesk */
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/spaceGrotesk/SpaceGrotesk-Regular.woff2');
+  src: local('Space Grotesk'), local('../fonts/spaceGrotesk/SpaceGrotesk-Regular'),
+  url('../fonts/spaceGrotesk/SpaceGrotesk-Regular.otf?#iefix') format('embedded-opentype'),
+  url('../fonts/spaceGrotesk/SpaceGrotesk-Regular.woff2') format('woff2'),
+  url('../fonts/spaceGrotesk/SpaceGrotesk-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/spaceGrotesk/SpaceGrotesk-Medium.woff2');
+  src: local('Space Grotesk Medium'), local('../fonts/spaceGrotesk/SpaceGrotesk-Medium'),
+  url('../fonts/spaceGrotesk/SpaceGrotesk-Medium.otf?#iefix') format('embedded-opentype'),
+  url('../fonts/spaceGrotesk/SpaceGrotesk-Medium.woff2') format('woff2'),
+  url('../fonts/spaceGrotesk/SpaceGrotesk-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/spaceGrotesk/SpaceGrotesk-Light.woff2');
+  src: local('Space Grotesk'), local('../fonts/spaceGrotesk/SpaceGrotesk-Light'),
+  url('../fonts/spaceGrotesk/SpaceGrotesk-Light.otf?#iefix') format('embedded-opentype'),
+  url('../fonts/spaceGrotesk/SpaceGrotesk-Light.woff2') format('woff2'),
+  url('../fonts/spaceGrotesk/SpaceGrotesk-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/spaceGrotesk/SpaceGrotesk-Bold.woff2');
+  src: local('Space Grotesk'), local('../fonts/spaceGrotesk/SpaceGrotesk-Bold'),
+  url('../fonts/spaceGrotesk/SpaceGrotesk-Bold.otf?#iefix') format('embedded-opentype'),
+  url('../fonts/spaceGrotesk/SpaceGrotesk-Bold.woff2') format('woff2'),
+  url('../fonts/spaceGrotesk/SpaceGrotesk-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Helvetica Neue */
+
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  src: url('../fonts/helveticaNeue/HelveticaNeueCyr-Bold.eot');
+  src: local('../fonts/helveticaNeue/HelveticaNeueCyr-Bold'),
+  url('../fonts/helveticaNeue/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/helveticaNeue/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+  url('../fonts/helveticaNeue/HelveticaNeueCyr-Bold.woff') format('woff'),
+  url('../fonts/helveticaNeue/HelveticaNeueCyr-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  src: url('../fonts/helveticaNeue/HelveticaNeueCyr-Light.eot');
+  src: local('../fonts/helveticaNeue/HelveticaNeueCyr-Light'),
+  url('../fonts/helveticaNeue/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/helveticaNeue/HelveticaNeueCyr-Light.woff2') format('woff2'),
+  url('../fonts/helveticaNeue/HelveticaNeueCyr-Light.woff') format('woff'),
+  url('../fonts/helveticaNeue/HelveticaNeueCyr-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/helveticaNeue/HelveticaNeueCyr-Medium.eot');
+  src: local('../fonts/helveticaNeue/HelveticaNeueCyr-Medium'),
+  url('../fonts/helveticaNeue/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/helveticaNeue/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+  url('../fonts/helveticaNeue/HelveticaNeueCyr-Medium.woff') format('woff'),
+  url('../fonts/helveticaNeue/HelveticaNeueCyr-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
