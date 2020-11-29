@@ -1,7 +1,6 @@
-# test_izabella
+# Test work "Izabella"
 
-clone
-npm i
-gulp
+git clone https://github.com/Delik/test_izabella.git <br />
+npm i && gulp
 
 // iusmanov.frontend@gmail.com
