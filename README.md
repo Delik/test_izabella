@@ -5,6 +5,4 @@ npm i && gulp
 
 http://localhost:8000
 
-also deployed on http://webde5ign/
-
 mailto: iusmanov.frontend@gmail.com
